@@ -96,3 +96,11 @@ body {
 .answer-button .incorrect {
   background-color: #ff9393;
 }
+
+/* Responsive Breakpoints */
+
+@media (max-width: 500px) {
+  .app {
+    margin-bottom: 6rem;
+  }
+}
