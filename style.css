@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #9eb8d9;
+  --correct-color: #9ade7b;
+  --wrong-color: #be3144;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.app {
+  background-color: white;
+  max-width: 600px;
+  width: 90%;
+  margin: 6rem auto 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app .title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.quiz {
+  padding: 1.5rem 0;
+}
+
+.quiz .question {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.answer-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.answer-button .button {
+  text-align: left;
+  color: #222;
+  background-color: white;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #222;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.answer-button .button:hover:not([disabled]) {
+  background-color: #222;
+  color: white;
+}
+
+.answer-button .button:disabled {
+  cursor: no-drop;
+}
+
+.quiz .next-button {
+  background-color: var(--primary-color);
+  font-weight: 500;
+  color: white;
+  padding: 0.8rem;
+  margin: 1rem auto 0;
+  display: none;
+  width: 9rem;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.answer-button .correct {
+  background-color: #9aeabc;
+}
+
+.answer-button .incorrect {
+  background-color: #ff9393;
+}
